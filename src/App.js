@@ -30,16 +30,16 @@ function App() {
     }
   };
 
-  const onChange = e => setQuery(e.target.value);
+  const onChange = (e) => setQuery(e.target.value);
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     getData();
   };
 
   return (
     <div className="App">
-      <h1>Food Searching App</h1>
+      <h1>Recipe App</h1>
       <form onSubmit={onSubmit} className="search-form">
         {alert !== "" && <Alert alert={alert} />}
         <input
@@ -48,16 +48,20 @@ function App() {
           onChange={onChange}
           value={query}
           autoComplete="off"
-          placeholder="Search Food"
+          placeholder="Search For Recipe"
         />
         <input type="submit" value="Search" />
       </form>
       <div className="recipes">
         {recipes !== [] &&
-          recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
+          recipes.map((recipe) => <Recipe key={uuidv4()} recipe={recipe} />)}
       </div>
     </div>
   );
 }
 
 export default App;
+
+// "predeploy": "npm run build",
+// "deploy": "gh-pages -d build",
+// "homepage": "https://PriyanshuSaxena2612.github.io//Recipe-App",

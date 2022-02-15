@@ -17,14 +17,13 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #1C0B19;
 }
 
 h1 {
   font-size: 8rem;
-  letter-spacing: 0.1rem;
-  font-style: italic;
-  color: #40b48e;
-  text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
+  letter-spacing: 0.5rem;
+  color: #475841;
   text-transform: uppercase;
   margin: 4rem 0;
 }
@@ -35,11 +34,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d3d3d3;
+  background-color: #3685B5;
   border-radius: 0.5rem;
   margin-bottom: 5rem;
-  box-shadow: 1rem 2rem 5rem #aaa;
+  box-shadow: 0 0 2rem white;
   position: relative;
+  /* cursor: pointer; */
 }
 
 .alert {
@@ -78,8 +78,9 @@ h1 {
 .search-form input[type="submit"] {
   width: 25%;
   text-transform: uppercase;
-  background-color: #40b48e;
+  background-color: #475841;
   color: #fff;
+  cursor: pointer;
 }
 
 .recipes {
@@ -96,11 +97,11 @@ h1 {
   margin: 3rem;
   display: flex;
   flex-direction: column;
-  background-color: #d3d3d3;
+  background-color: #3685B5;
   padding: 2rem;
   position: relative;
   border-radius: 0.5rem;
-  box-shadow: 2rem 3rem 5rem #aaa;
+  box-shadow: 0rem 0rem 2rem white;
 }
 
 .recipe h2 {
@@ -124,14 +125,14 @@ h1 {
 
 .recipe a {
   font-size: 1.8rem;
-  color: #40b48e;
+  color: #475841;
 }
 
 .recipe button {
   font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
-  background-color: #40b48e;
+  background-color: #475841;
   border: none;
   border-radius: 0.5rem;
   height: 3rem;
@@ -142,6 +143,7 @@ h1 {
   background-color: #f0f0f0;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .ingredient-list li {
@@ -154,6 +156,6 @@ h1 {
 }
 
 .ingredient-weight {
-  color: #40b48e;
+  color: #475841;
   font-size: 1.3rem;
 }
